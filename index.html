@@ -19,18 +19,27 @@
         You know you want to.</div>
         <form action="#" method="post" id="form">
         <legend>Let's do this!</legend>
-        <label for="first_name">*First Name:</label>
-        <input type="text" name="first_name" id="first-name" required>
-        <label for="last_name">*Last Name:</label>
-        <input type="text" name="last_name" id="last-name" required>
-        <label for="email">*Email:</label>
-        <input type="email" name="email" id="email" placeholder="example@example.com" required>
-        <label for="phone_number">Phone number:</label>
-        <input type="number" name="phone_number" id="phone-number" pattern="+36-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="HU (+36-30-111-1111)">
-        <label for="password">*Password:</label>
-        <input type="password" name="password" id="password" required>
-        <label for="confirm_password">*Confirm password</label>
-        <input type="password" name="password" id="password-Confirm" >
+        <div class="form-divs">
+            <div>
+                <label for="first_name">*First Name:</label>
+                <input type="text" name="first_name" id="first-name" required>
+            </div><div>
+                <label for="last_name">*Last Name:</label>
+                <input type="text" name="last_name" id="last-name" required>
+            </div><div>
+                <label for="email">*Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+            </div><div>
+                <label for="phone_number">Phone number:</label>
+                <input type="number" name="phone_number" id="phone-number" pattern="+36-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="HU (+36-30-111-1111)">
+            </div><div>
+                <label for="password">*Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div><div>
+                <label for="confirm_password">*Confirm password</label>
+                <input type="password" name="password" id="password-Confirm" >
+            </div>
+        </div>
     </form>
     <button class="button" type="submit" form="form">Create Account</button>
     <div class="login">Already have an account? <span class="green-text">Log In</span></div>
