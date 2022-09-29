@@ -4,11 +4,19 @@
 }
 body{
     height: 100vh;
+    display: flex;
 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
 .left-side{
     background-image: url("../pictures/backimg.jpg");
-    /*background-color: black;*/
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
@@ -47,4 +55,66 @@ a:link{
 }
 a:visited{
     color: white;
+}
+.right-side{
+    height: 100vh;
+    width: 65vw;
+    background-color: whitesmoke;
+    position: relative;
+    
+}
+form{
+    background-color: white;
+    height: 20rem;
+    margin: 3rem 0 2rem 0;
+    box-shadow: 0px 15px 15px -11px rgba(0,0,0,0.46);
+}
+.text{
+    font-size: 32px;
+    margin-top: 100px;
+}
+.text, form, .button, .login{
+    padding: 0 40px;
+}
+.button{
+    margin-left: 40px;
+    width: max-content;
+    height: 3rem;
+    border-radius: 7px;
+    background-color: #596d48;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border-style: none;
+    box-shadow: #596d48;
+    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.43);
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #828a7c;
+}
+.my-copyright{
+    position: absolute;
+    bottom: 0;
+    right: 27.5vw;
+}
+.login{
+    margin-top: 30px;
+}
+.green-text{
+    color: #636c57;
+}
+
+.green-text:hover{
+    cursor: pointer;
+    color: #bfc6bb;
+}
+
+
+.my-copyright>p>a:link,.my-copyright>p>a:visited{
+color: black;
+text-decoration: none;
+}
+.my-copyright>p>a:hover{
+    color: gray;
 }

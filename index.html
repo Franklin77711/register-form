@@ -13,12 +13,28 @@
     <div class="title"><img src="pictures/odin-lined.png" alt="odinlogo" class="logo-img"><p>ODIN</p></div>
     <div class="footer pic-copyright">Photo by <a href="https://unsplash.com/@haliewestphoto"><span class="underline">Halie West </span></a>on <a href="https://unsplash.com/"><span class="underline">Unsplash</span></a></div>
 </div>
-<div class="right-side"></div>
-    <div class="text"></div>
-    <div class="form"></div>
-    <div class="button"></div>
-    <div class="login"></div>
-    <div class="footer my-copyright"></div>
+<div class="right-side">
+    <div class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+        <br><br>
+        You know you want to.</div>
+        <form action="#" method="post" id="form">
+        <legend>Let's do this!</legend>
+        <label for="first_name">*First Name:</label>
+        <input type="text" name="first_name" id="first-name" required>
+        <label for="last_name">*Last Name:</label>
+        <input type="text" name="last_name" id="last-name" required>
+        <label for="email">*Email:</label>
+        <input type="email" name="email" id="email" placeholder="example@example.com" required>
+        <label for="phone_number">Phone number:</label>
+        <input type="number" name="phone_number" id="phone-number" pattern="+36-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="HU (+36-30-111-1111)">
+        <label for="password">*Password:</label>
+        <input type="password" name="password" id="password" required>
+        <label for="confirm_password">*Confirm password</label>
+        <input type="password" name="password" id="password-Confirm" >
+    </form>
+    <button class="button" type="submit" form="form">Create Account</button>
+    <div class="login">Already have an account? <span class="green-text">Log In</span></div>
+    <div class="footer my-copyright"><p>Copyright © <a href="https://github.com/Franklin77711">Nagy Robert</a></p></div>
 </div>
     <script src="script.js"></script>
 </body>
