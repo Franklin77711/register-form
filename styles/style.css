@@ -5,6 +5,7 @@
 body{
     height: 100vh;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 input::-webkit-outer-spin-button,
@@ -37,7 +38,7 @@ input[type=number] {
     gap: 20px;
     align-items: center;
     margin-top: 170px;
-    font-family: Norse-Bold, 'Times New Roman',serif;
+    font-family: Norse-Bold, Arial, sans-serif;
     font-size: 64px;
     background-color: rgba(0, 0, 0, 0.4);
     height: 150px;
@@ -47,7 +48,6 @@ input[type=number] {
 }
 .footer{
     margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 a:link{
@@ -124,7 +124,10 @@ label, input{
     display: block;
     width: 300px;
     height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    border-radius: 5px;
+    border: 2px solid black;
 }
 .form-divs{
     display: flex;
@@ -139,4 +142,22 @@ legend{
     font-size: 28px;
     font-weight: 500;
     padding: 20px 0;
+}
+.pass-error{
+    color: red;
+    margin-top: 5px;
+    font-weight: bold;
+    visibility: hidden;
+}
+#email:valid{
+    border-color: green;
+}
+#email:invalid{
+    border-color: red;
+}
+#phone-number:valid{
+    border-color: green;
+}
+#phone-number:invalid{
+    border-color: red;
 }
